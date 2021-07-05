@@ -5,15 +5,16 @@
 #include <iostream>
 
 void fillArray(int*, int);
+void reverseArray(int*, int);
+void printProduct(int*, int*, int);
+void printSum(int*, int*, int);
 int  findMax(int*, int);
 int  findMaxIndex(int*, int);
 int  findMin(int*, int); 
 int  findMinIndex(int*, int);
-void reverseArray(int*, int);
-void printProduct(int*, int*, int);
-void printSum(int*, int*, int);
 int  oddNumCount(int*, int);
-int evenNumCount(int*, int);
+int  evenNumCount(int*, int);
+int  sumProduct(int*, int);
 
 int main()
 {
@@ -33,6 +34,7 @@ int main()
 	printSum(arr, secondArr, s);
 	std::cout << "Count of odds : " << oddNumCount(arr, s) << std::endl;
 	std::cout << "Count of evens : " << evenNumCount(secondArr, s) << std::endl;
+	std::cout << "Arithmetic mean of sum and product : " << sumProduct(arr, s);
 
 	return 0;
 }
@@ -140,4 +142,15 @@ int evenNumCount(int* arr, int s)
 		}
 	}
 	return count;
+}
+
+int sumProduct(int* array, int size)
+{
+	int sum = 0;
+	int product = 1;
+	for(int i = 0; i < size; ++i) {
+		sum += array[i];
+		product *= array[i];
+	}
+	return (sum + product) / 2;
 }
