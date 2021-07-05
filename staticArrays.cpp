@@ -1,6 +1,6 @@
-///////////////////
-/// 1-6, 11, 12 ///
-///////////////////
+///////////////////////
+/// 1-6, 11, 12, 16 ///
+///////////////////////
 
 #include <iostream>
 
@@ -34,7 +34,7 @@ int main()
 	printSum(arr, secondArr, s);
 	std::cout << "Count of odds : " << oddNumCount(arr, s) << std::endl;
 	std::cout << "Count of evens : " << evenNumCount(secondArr, s) << std::endl;
-	std::cout << "Arithmetic mean of sum and product : " << sumProduct(arr, s);
+	std::cout << "Arithmetic mean of sum and product : " << sumProduct(arr, s) << std::endl;
 
 	return 0;
 }
