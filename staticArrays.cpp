@@ -14,7 +14,7 @@ int  findMin(int*, int);
 int  findMinIndex(int*, int);
 int  oddNumCount(int*, int);
 int  evenNumCount(int*, int);
-int  sumProduct(int*, int);
+int  average(int*, int);
 
 int main()
 {
@@ -34,7 +34,7 @@ int main()
 	printSum(arr, secondArr, s);
 	std::cout << "Count of odds : " << oddNumCount(arr, s) << std::endl;
 	std::cout << "Count of evens : " << evenNumCount(secondArr, s) << std::endl;
-	std::cout << "Arithmetic mean of sum and product : " << sumProduct(arr, s) << std::endl;
+	std::cout << "Average of sum and product : " << average(arr, s) << std::endl;
 
 	return 0;
 }
@@ -144,7 +144,7 @@ int evenNumCount(int* arr, int s)
 	return count;
 }
 
-int sumProduct(int* array, int size)
+int average(int* array, int size)
 {
 	int sum = 0;
 	int product = 1;
